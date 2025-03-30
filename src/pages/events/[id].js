@@ -23,7 +23,7 @@ export default function RedirectToApp() {
   return (
     <div>
       <h1>Opening CampusConnect...</h1>
-      <p>If nothing happens, you’ll be redirected shortly.</p>
+      <p>{"This can happen if the app isn't installed yet."}.</p>
     </div>
   );
 }
