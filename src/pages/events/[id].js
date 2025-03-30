@@ -7,17 +7,17 @@ export default function RedirectToApp() {
 
   useEffect(() => {
     if (!id) return;
-    const deepLink = `campusconnect://events/${id}`;
-    const fallbackUrl = `/fallback?id=${id}`;
-    //const fallbackUrl = `https://apps.apple.com/app/your-app-id`; // replace with your App Store link
 
-    const timer = setTimeout(() => {
-      window.location.href = fallbackUrl;
-    }, 2000);
+    const expoLink = `exp://exp.host/@ywang2776/campusconnect/--/events/${id}`;
+    const fallback = `/fallback?id=${id}`;
 
-    window.location.href = deepLink;
+    window.location.href = expoLink;
 
-    return () => clearTimeout(timer);
+    const timeout = setTimeout(() => {
+      window.location.href = fallback;
+    }, 3000);
+
+    return () => clearTimeout(timeout);
   }, [id]);
 
   return (
