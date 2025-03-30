@@ -8,7 +8,7 @@ export default function RedirectToApp() {
   useEffect(() => {
     if (!id) return;
 
-    const expoLink = `exp://exp.host/@ywang2776/campusconnect/--/events/${id}`;
+    const expoLink = `exp://exp.host/@ywang2776/campus-connect-mobile/--/events/${id}`;
     const fallback = `/fallback?id=${id}`;
 
     window.location.href = expoLink;
