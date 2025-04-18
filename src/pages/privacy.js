@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
           If you have any questions about this Privacy Policy, please contact us at:
         </p>
         <p>
-          <a href="mailto:campusconnect.app@gmail.com">campusconnect.app@gmail.com</a>
+          <a href="mailto:campusconnect.co@gmail.com">campusconnect.app@gmail.com</a>
         </p>
       </div>
     );
